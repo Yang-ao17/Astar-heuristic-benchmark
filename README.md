@@ -19,6 +19,20 @@ The benchmark evaluates:
 
 The motivation is related to LLM-based automated heuristic design. If an LLM or another search process proposes a candidate heuristic, this project shows how that heuristic can be evaluated automatically without adding any external API calls or requiring API keys.
 
+## Acknowledgement
+
+This project was inspired by Thomas Bömer's work on LLM-based heuristic design for A* search.
+
+The basic A* implementation is adapted from a course notebook. I extended it into a modular benchmarking framework for comparing candidate heuristics across diagnostic map instances.
+
+## My Contributions
+
+- Refactored the original notebook into a modular Python benchmark.
+- Added multiple heuristic functions for comparison.
+- Designed `maze` and `trap` maps to expose different heuristic behaviors.
+- Added evaluation metrics such as path cost, optimality gap, expanded nodes, runtime, and budget failure.
+- Automated experiment execution and result generation.
+
 ## Install
 
 ```bash
